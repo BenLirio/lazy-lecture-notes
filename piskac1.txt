@@ -1,0 +1,43 @@
+Outline:
+
+- Introduction
+    - Personal experience with software synthesis
+    - Importance of understanding software synthesis
+
+- Definition of software synthesis
+
+- Role of verification in software synthesis
+
+- Reduction of programmer burden in software synthesis
+
+- Historical perspective on code synthesis
+    - Overview of synthesis in the 50s
+    - Combination of synthesis in the 80s
+    - Synthesis in the 2000s
+
+- Introduction to effort-free programming
+    - Reactive synthesis
+        - Church's paper on synthesis in the 50s
+        - Reactive systems and their nature
+        - Realizability and synthesis in reactive systems
+        - Discussion on linear temporal logic (LTL)
+            - Operators in LTL (next, globally, eventually, until)
+            - Examples of expressing properties using LTL
+            - Satisfiability and realizability in LTL specifications
+            - Introduction to arbiter synthesis
+                - Specify arbiter using LTL properties
+                - Overview of deterministic automata
+
+- Synthesizing distributed systems
+- Use of SMT solvers
+
+- Game-based synthesis
+    - Introduction to games
+    - Description of simple game
+    - Winning conditions in a game-based synthesis
+    - Strategies for winning in different nodes of the game
+
+- Conclusion
+- Example of simplified game implementation
+- Importance of understanding the synthesis procedure
+- Need for a more systematic approach in software synthesis
