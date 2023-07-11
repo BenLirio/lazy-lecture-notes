@@ -1,0 +1,100 @@
+Updated Outline:
+- Recap of the previous lecture
+  - Introduction to the language Ip and its semantics
+  - Function for evaluating expressions
+  - Relation for big step semantics of commands
+  - Introduction to the target language, a small virtual machine
+  - Semantics of the target language using small step semantics
+  - Compiler from Ip to VM
+  - Theorems about the compiler
+- Behavior of programs with Y loops
+  - Inclusion of Y loops in the language
+  - Need for considering non-terminating programs
+  - Introduction of divergence as a possible behavior
+- Transition from big step to small step semantics
+  - Advantages of small step semantics for programs with diverging loops
+  - Definition of small step semantics for commands
+  - Use of library to compute the reflexive transitive closure
+  - Use of small step semantics to model execution of goal programs
+- Comparing behaviors of programs
+  - Need to compare the behaviors of terminating and diverging programs
+  - Introduction of simulations as a method of comparison
+  - Types of simulations: big simulations, forward simulations, backward simulations
+  - Explanation of forward simulation and its relation to the theorem mentioned earlier
+  - Insufficiency of forward simulation due to non-determinism in languages like C
+- Discussion on non-determinism in C
+  - Explanation of undefined behavior in C
+  - Example of out-of-bound array access as undefined behavior
+  - Examples where the source and target programs have different behaviors
+- Conclusion on the need for better simulations
+  - Forward simulation not sufficient in some cases
+  - Limitations due to non-determinism in the language
+  - Introduction to upcoming topics on simulations and semantic preservation.
+- Overview of simulations
+  - Explanation of simulation diagrams
+  - Importance of preserving invariants between semantic states
+  - Forward simulation and its requirements for preserving behaviors
+  - Backward simulation and its requirements for preserving behaviors
+  - Difference in difficulty between forward and backward simulations
+- Proving forward simulations
+  - Showing that each transition in the source program is simulated by corresponding transitions in the compiled code
+  - Preserving the invariant between semantic states during the simulation
+- Proving backward simulations
+  - Showing that each behavior of the compiled code is possible in the source program
+  - Preserving the invariant between semantic states during the simulation
+- Importance of preserving termination and divergence in compiler verification
+  - Focus on safe forward and backward simulations
+  - Definition of safe forward simulation
+  - Definition of safe backward simulation
+- Techniques for proving compiler properties
+  - Use of simulation diagrams for showing transitions and invariants
+  - Matching names and other details to ensure correct simulation
+- The need to avoid stuttering problem in simulation diagrams
+  - Explanation of the stuttering problem with diverging programs
+  - Introduction of a measure to show progress in the execution
+  - The most general simulation diagram with and without a measure
+- Conclusion on simulation diagrams and proofs
+  - Simulation diagrams as a means to prove correctness of a pass
+  - Importance of finding the right invariant and measure
+  - Recap of the proof process using simulation diagrams and measures
+- Next steps in the lecture
+  - Introduction to small-step semantics for the heap language
+  - Importance of small-step semantics for preserving non-terminating programs
+  - Overview of the remaining proof process for the heap language.
+- Small-step semantics for heap language
+  - Definition of small-step semantics relation for commands and initial state
+  - Reduction rules for assignments, sequence of commands, if statements, and y-loops
+  - Relationship between big-step and small-step semantics for programs
+- Challenges with small-step semantics in compiler verification
+  - Generation of fresh commands in small-step semantics
+  - Difficulty in maintaining correspondence between source and compiled commands
+  - Impact on simulation diagrams and proof techniques
+- Importance of preserving behaviors in simulations
+  - Overview of forward and backward simulations
+  - Requirements for preserving behaviors in forward and backward simulations
+- Proving forward simulations for small-step semantics
+  - Showing correspondence between source and compiled commands in simulations
+  - Preserving invariants between semantic states during the simulation
+- Proving backward simulations for small-step semantics
+  - Showing that behaviors of the compiled code are possible in the source program
+  - Preserving invariants between semantic states during the simulation
+- Challenges with simulation diagrams and fresh commands
+  - Impracticality of reasoning on execution relations with fresh commands
+  - Difficulty in defining measures and maintaining correspondence in simulations
+- Conclusion on the limitations of simulation diagrams
+  - Importance of finding alternative approaches for proving correctness
+  - Recap of the proof process using simulation diagrams and measures
+- Next steps in the lecture
+  - Introduction to small-step semantics for the heap language
+  - Importance of small-step semantics for preserving non-terminating programs
+  - Overview of the remaining proof process for the heap language.
+- Continuation-based small-step semantics for source language
+  - Introduction of continuations in the semantics
+  - Focus on rewriting pairs with a subcommand and a continuation
+  - Rules for sequences and loops in the new semantics
+- Termination and divergence in the small-step semantics
+  - Definition of termination and divergence in the new semantics
+  - Computing the complexity of a program using the reflexive transitive closure
+- Conclusion on the changes in the small-step semantics
+  - Advantages of using continuations in the proof process
+  - Simplification of induction and reasoning in the new semantics

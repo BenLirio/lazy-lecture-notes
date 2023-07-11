@@ -26,5 +26,3 @@ with open("transcript.txt", "w") as transcript_file:
       previous_transcript = transcript
       transcript_file.write(transcript)
     os.remove(chunk_filename)
-    if i == 1:
-      break
